@@ -5,6 +5,8 @@ class Animal:
       self.cor = cor
       self.porte = porte
       self.particularidade = particularidade
+    
+class Pessoa:
 
         
 
