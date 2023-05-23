@@ -4,6 +4,7 @@ class Animal:
       self.idade = idade
       self.cor = cor
       self.porte = porte
+      self.particularidade = particularidade
 
         
 
