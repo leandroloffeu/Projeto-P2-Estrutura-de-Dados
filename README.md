@@ -16,14 +16,6 @@ Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do
 
 
 
-A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
-
-A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
-
-A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
-
-
-
 Regras de avaliação
 Fluxograma em PDF no repositório (1 ponto )
 Organização clara (0,5 pontos)
@@ -38,3 +30,13 @@ Organização do projeto (3 pontos)
 Hierarquia dos arquivos e organização das pastas - diretórios, nome de arquivos, classes etc... (1 ponto)
 Relação commit/dia com no mínimo 50 commits no final do projeto e no máximo 5 commits dia ( 1ponto)
 Organização do Readme do projeto contendo Título do projeto, enunciado, participantes, nome do professor (linkando para meu github), disciplina e ao menos 3 imagens do fluxograma, código e o programa rodando. (1 ponto)
+
+
+
+
+
+A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
+
+A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
+
+A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
