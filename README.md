@@ -40,3 +40,8 @@ A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitur
 A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
 
 A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
+
+A classe Prefeitura é a principal do sistema e possui os métodos para cadastrar animais e pessoas interessadas, pesquisar animais disponíveis e gerar um relatório com as informações dos animais disponíveis para adoção para cada pessoa interessada.
+
+No construtor da classe Prefeitura, __init__, são criadas duas listas vazias, animais e pessoas_interessadas, que serão utilizadas para armazenar os objetos criados durante o cadastro.
+
