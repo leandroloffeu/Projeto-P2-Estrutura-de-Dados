@@ -15,6 +15,15 @@ A prefeitura precisa de um sistema que possa cadastrar todos os animais por tipo
 Os alunos anotaram atentamente a todas as observações, criaram o fluxograma do estudo de caso, e posteriormente o primeiro protótipo em Python, ainda que em modo texto, e sem requisitos gráficos. A ideia foi apenas validar a proposta do programa junto ao solicitante.
 
 
+
+A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
+
+A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
+
+A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
+
+
+
 Regras de avaliação
 Fluxograma em PDF no repositório (1 ponto )
 Organização clara (0,5 pontos)
