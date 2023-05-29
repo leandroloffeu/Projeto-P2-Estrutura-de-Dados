@@ -6,8 +6,9 @@ def exibir_menu():
     print("1. Cadastrar animal")
     print("2. Cadastrar pessoa interessada")
     print("3. Pesquisar animais disponíveis")
-    print("4. Gerar relatório")
-    print("5. Sair")
+    print("4. Pesquisar pessaos")
+    print("5. Gerar relatório")
+    print("6. Sair")
 
 # Instanciar a classe Prefeitura
 prefeitura = Prefeitura()
@@ -48,11 +49,25 @@ while True:
                 print("----------")
         else:
             print("Nenhum animal encontrado.")
-
+    
     elif escolha == "4":
-        prefeitura.gerar_relatorio()
+        pessoa = input("Digite o nome da pessoa: ")
+        pessoa_encontrada = prefeitura.pesquisar_pessoas(pessoa)
+        if pessoa_encontrada:
+            print("Pessoas: ")
+            for pessoa in pessoa_encontrada:
+                print(f"Tipo: {pessoa.nome}")
+                print(f"Idade: {pessoa.contato}")
+                print(f"Cor: {pessoa.especie_interesse}")
+                print(f"Porte: {pessoa.preferencia}")
+                print("----------")
+        else:
+            print("Nenhum dado encontrado.")
 
     elif escolha == "5":
+        prefeitura.gerar_relatorio()
+
+    elif escolha == "6":
         print("Encerrando o programa...")
         break
 
