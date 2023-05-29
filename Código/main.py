@@ -1,4 +1,4 @@
-from classe import*
+from classe import *
 
 
 def exibir_menu():
@@ -16,6 +16,7 @@ prefeitura = Prefeitura()
 while True:
     exibir_menu()
     escolha = input("Escolha uma opção: ")
+
 
     if escolha == "1":
         tipo = input("Tipo do animal: ")
