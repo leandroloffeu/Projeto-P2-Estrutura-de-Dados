@@ -34,6 +34,13 @@ class Prefeitura:
                     animais_encontrados.append(animal)
         return animais_encontrados
 
+    def pesquisar_pessoas(self, nome):
+        pessoas_encontradas = []
+        for pessoa in self.pessoas_interessadas:
+            if pessoa.nome == nome:
+                pessoas_encontradas.append(pessoa)
+        return pessoas_encontradas
+
     def gerar_relatorio(self):
         for pessoa in self.pessoas_interessadas:
             animais_disponiveis = self.pesquisar_animal(pessoa.especie_interesse, pessoa.preferencia)
