@@ -53,4 +53,7 @@ No construtor da classe Prefeitura, __init__, são criadas duas listas vazias, a
 
 O método cadastrar_animal recebe como parâmetros as características de um animal e cria um objeto Animal com essas informações. Esse objeto é adicionado à lista animais da Prefeitura.
 
+O método cadastrar_pessoa_interessada funciona de maneira semelhante ao cadastrar_animal, recebendo informações sobre a pessoa interessada e criando um objeto Pessoa com esses dados. O objeto é adicionado à lista pessoas_interessadas da Prefeitura.
+
+
 
