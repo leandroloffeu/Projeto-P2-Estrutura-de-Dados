@@ -79,7 +79,33 @@ class Prefeitura:
                     print(f"Porte: {a.porte}")
                     print(f"Particularidade: {a.particularidade}")
                     print("----------")
-    
+                    
+         elif opcao == '4':
+            porte_animal = input('Digite o tipo de animal: ')
+            print("Animais encontrados:")
+            for a in self.animais:
+                if a.porte == porte_animal:
+                    print("----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+          
+        
+        elif opcao == '5':
+            part_animal = input('Digite o tipo de animal: ')
+            print("Animais encontrados:")
+            for a in self.animais:
+                if a.part == part_animal:
+                    print("----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
     
     
     #MÉTODO PARA PESQUISAR PESSOAS
