@@ -28,8 +28,18 @@ class Prefeitura:
         pessoa = Pessoa(nome, contato, especie_interesse, preferencia)
         self.pessoas_interessadas.append(pessoa)
 
-    #MÉTODO PARA PESQUISAR ANIMAIS POR TIPO/IDADE/COR/PORTE/PARTICULARIDADE    
-    def pesquisar_animal(self, especie, preferencia=None):
+    
+    #MÉTODO PARA PESQUISAR ANIMAL PARA RELATÓRIO
+    def pesquisar_animal_relatorio(self, especie, preferencia=None):
+        animais_encontrados = []
+        for animal in self.animais:
+            if animal.tipo == especie:
+                if preferencia is None or animal.particularidade == preferencia:
+                    animais_encontrados.append(animal)
+        return animais_encontrados
+    
+    #MÉTODO PARA PESQUISAR ANIMAIS POR TIPO/IDADE/COR/PORTE/PARTICULARIDADE  
+    def pesquisar_animal():
         print('='*35)
         print("Menu Pesquisa Animal:")
         print("\n1. Pesquisar animal pelo tipo")
@@ -122,7 +132,7 @@ class Prefeitura:
     #MÉTODO PARA GERAR RELATÓRIO
     def gerar_relatorio(self):
         for pessoa in self.pessoas_interessadas:
-            animais_disponiveis = self.pesquisar_animal(pessoa.especie_interesse, pessoa.preferencia)
+            animais_disponiveis = self.pesquisar_animal_relatorio(pessoa.especie_interesse, pessoa.preferencia)
             print(f"Nome: {pessoa.nome}")
             print(f"Contato: {pessoa.contato}")
             print("Animais disponíveis:")
