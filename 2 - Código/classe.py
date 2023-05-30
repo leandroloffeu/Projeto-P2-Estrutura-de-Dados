@@ -106,6 +106,9 @@ class Prefeitura:
                     print(f"Porte: {a.porte}")
                     print(f"Particularidade: {a.particularidade}")
                     print("----------")
+         
+        else:
+            print('Nenhum animal encontrado com essa característica')
     
     
     #MÉTODO PARA PESQUISAR PESSOAS
