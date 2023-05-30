@@ -30,13 +30,55 @@ class Prefeitura:
 
     #MÉTODO PARA PESQUISAR ANIMAIS POR TIPO/IDADE/COR/PORTE/PARTICULARIDADE    
     def pesquisar_animal(self, especie, preferencia=None):
-        animais_encontrados = []
-        for animal in self.animais:
-            if animal.tipo == especie:
-                if preferencia is None or animal.particularidade == preferencia:
-                    animais_encontrados.append(animal)
-        return animais_encontrados
-    
+        print('='*35)
+        print("Menu Pesquisa Animal:")
+        print("\n1. Pesquisar animal pelo tipo")
+        print("\n2. Pesquisar animal pela idade")
+        print("\n3. Pesquisar animail pela cor")
+        print("\n4. Pesquisar animal pelo porte")
+        print("\n5. Pesquisar animal pela particularidade")
+        print("\n6. Sair\n")
+        print('='*35)
+        opcao = input('Escolha a opção de pesquisa: ')
+        
+        if opcao == '1':
+            tipo_animal = input('Digite o tipo de animal: ')
+            print("Animais encontrados:")
+            for a in self.animais:
+                if a.tipo == tipo_animal:
+                    print("----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+                 
+        elif opcao == '2':
+            idade_animal = input('Digite o tipo de animal: ')
+            print("Animais encontrados:")
+            for a in self.animais:
+                if a.idade == idade_animal:
+                    print("----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+         
+        elif opcao == '3':
+            cor_animal = input('Digite o tipo de animal: ')
+            print("Animais encontrados:")
+            for a in self.animais:
+                if a.cor == cor_animal:
+                    print("----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
     
     
     
