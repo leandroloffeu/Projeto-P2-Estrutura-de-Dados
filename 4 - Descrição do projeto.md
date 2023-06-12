@@ -36,10 +36,13 @@ Organização do Readme do projeto contendo Título do projeto, enunciado, parti
 A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
 
 
+
+
 ![N|solid](https://github.com/leandroloffeu/Estrutura_de_dados_P1/blob/5d71a6c987f6922fd27baa393e167cdb357763a6/imagens/Obter%20todas%20as%20posi%C3%A7%C3%B5es%20dos%20elementos.PNG)
 
 A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
 
+![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/classe%20pessoa.png)
 
 A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
 
