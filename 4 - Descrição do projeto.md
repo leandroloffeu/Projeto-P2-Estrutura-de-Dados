@@ -33,7 +33,7 @@ Organização do Readme do projeto contendo Título do projeto, enunciado, parti
 
 
 
-A estrutura do código é composta por três classes: __Animal, Pessoa e Prefeitura.
+A estrutura do código é composta por três classes: __Animal, Pessoa e Prefeitura.__
 
 
 
