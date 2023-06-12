@@ -62,3 +62,9 @@ O método cadastrar_pessoa_interessada funciona de maneira semelhante ao cadastr
 
 
 
+
+O método pesquisar_animal recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
+
+
+
+
