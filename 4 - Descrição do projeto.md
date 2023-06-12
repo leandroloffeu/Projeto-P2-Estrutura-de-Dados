@@ -47,10 +47,9 @@ A classe Animal define as características de um animal, como tipo, idade, cor, 
 A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
 
 
+![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/Classe%20prefeitura.png)
+
 A classe Prefeitura é a principal do sistema e possui os métodos para cadastrar animais e pessoas interessadas, pesquisar animais disponíveis e gerar um relatório com as informações dos animais disponíveis para adoção para cada pessoa interessada.
-
-
-
 No construtor da classe Prefeitura, __init__, são criadas duas listas vazias, animais e pessoas_interessadas, que serão utilizadas para armazenar os objetos criados durante o cadastro.
 
 
