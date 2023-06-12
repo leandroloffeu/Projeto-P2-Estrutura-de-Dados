@@ -52,70 +52,85 @@ class Prefeitura:
         opcao = input('Escolha a opção de pesquisa: ')
         
         if opcao == '1':
-            tipo_animal = input('Digite o tipo de animal: ')
+            tipo_animal = input('Digite o tipo desejado: ')
             print("Animais encontrados:")
-            for a in self.animais:
-                if a.tipo == tipo_animal:
-                    print("----------")
-                    print(f"Tipo: {a.tipo}")
-                    print(f"Idade: {a.idade}")
-                    print(f"Cor: {a.cor}")
-                    print(f"Porte: {a.porte}")
-                    print(f"Particularidade: {a.particularidade}")
-                    print("----------")
+            if len(self.animais) == 0:
+                print('>> Tipo não localizado <<')
+            else:
+                for a in self.animais:
+                    if a.tipo == tipo_animal:
+                        print("----------")
+                        print(f"Tipo: {a.tipo}")
+                        print(f"Idade: {a.idade}")
+                        print(f"Cor: {a.cor}")
+                        print(f"Porte: {a.porte}")
+                        print(f"Particularidade: {a.particularidade}")
+                        print("----------")
                  
         elif opcao == '2':
-            idade_animal = input('Digite o tipo de animal: ')
+            idade_animal = input('Digite a idade desejada: ')
             print("Animais encontrados:")
-            for a in self.animais:
-                if a.idade == idade_animal:
-                    print("----------")
-                    print(f"Tipo: {a.tipo}")
-                    print(f"Idade: {a.idade}")
-                    print(f"Cor: {a.cor}")
-                    print(f"Porte: {a.porte}")
-                    print(f"Particularidade: {a.particularidade}")
-                    print("----------")
+            if len(self.animais) == 0:
+                print('>> Nenhuma animal com essa idade foi encontrato <<')
+            else:
+                for a in self.animais:
+                    if a.idade == idade_animal:
+                        print("----------")
+                        print(f"Tipo: {a.tipo}")
+                        print(f"Idade: {a.idade}")
+                        print(f"Cor: {a.cor}")
+                        print(f"Porte: {a.porte}")
+                        print(f"Particularidade: {a.particularidade}")
+                        print("----------")
          
         elif opcao == '3':
-            cor_animal = input('Digite o tipo de animal: ')
+            cor_animal = input('Digite a cor desejada: ')
             print("Animais encontrados:")
-            for a in self.animais:
-                if a.cor == cor_animal:
-                    print("----------")
-                    print(f"Tipo: {a.tipo}")
-                    print(f"Idade: {a.idade}")
-                    print(f"Cor: {a.cor}")
-                    print(f"Porte: {a.porte}")
-                    print(f"Particularidade: {a.particularidade}")
-                    print("----------")
+            if len(self.animais) == 0:
+                print('>> Nenhuma animal com essa cor foi encontrato <<')
+            else:
+                for a in self.animais:
+                    if a.cor == cor_animal:
+                        print("----------")
+                        print(f"Tipo: {a.tipo}")
+                        print(f"Idade: {a.idade}")
+                        print(f"Cor: {a.cor}")
+                        print(f"Porte: {a.porte}")
+                        print(f"Particularidade: {a.particularidade}")
+                        print("----------")
                     
         elif opcao == '4':
-            porte_animal = input('Digite o tipo de animal: ')
+            porte_animal = input('Digite o porte desejado: ')
             print("Animais encontrados:")
-            for a in self.animais:
-                if a.porte == porte_animal:
-                    print("----------")
-                    print(f"Tipo: {a.tipo}")
-                    print(f"Idade: {a.idade}")
-                    print(f"Cor: {a.cor}")
-                    print(f"Porte: {a.porte}")
-                    print(f"Particularidade: {a.particularidade}")
-                    print("----------")
+            if len(self.animais) == 0:
+                print('>> Nenhuma animal com esse porte foi encontrato <<')
+            else:
+                for a in self.animais:
+                    if a.porte == porte_animal:
+                        print("----------")
+                        print(f"Tipo: {a.tipo}")
+                        print(f"Idade: {a.idade}")
+                        print(f"Cor: {a.cor}")
+                        print(f"Porte: {a.porte}")
+                        print(f"Particularidade: {a.particularidade}")
+                        print("----------")
           
         
         elif opcao == '5':
-            part_animal = input('Digite o tipo de animal: ')
+            part_animal = input('Digite a prticularidade desejada: ')
             print("Animais encontrados:")
-            for a in self.animais:
-                if a.part == part_animal:
-                    print("----------")
-                    print(f"Tipo: {a.tipo}")
-                    print(f"Idade: {a.idade}")
-                    print(f"Cor: {a.cor}")
-                    print(f"Porte: {a.porte}")
-                    print(f"Particularidade: {a.particularidade}")
-                    print("----------")
+            if len(self.animais) == 0:
+                print('>> Nenhuma animal com essa particulridade foi encontrato <<')
+            else:
+                for a in self.animais:
+                    if a.particularidade == part_animal:
+                        print("----------")
+                        print(f"Tipo: {a.tipo}")
+                        print(f"Idade: {a.idade}")
+                        print(f"Cor: {a.cor}")
+                        print(f"Porte: {a.porte}")
+                        print(f"Particularidade: {a.particularidade}")
+                        print("----------")
          
         else:
             print('Nenhum animal foi encontrado com as características dessa pessoa.')

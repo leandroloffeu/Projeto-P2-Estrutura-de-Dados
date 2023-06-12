@@ -2,6 +2,7 @@ from classe import *
 
 
 def exibir_menu():
+    print()
     print('='*42)
     print("="*10,'SISTEMA DE REGISTROS','='*10)
     print('='*42)
