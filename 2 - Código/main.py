@@ -42,21 +42,21 @@ while True:
         print("Pessoa interessada cadastrada com sucesso!")
 
     elif escolha == "3":
-        especie = input("Espécie a pesquisar: ")
-        preferencia = input("Preferência (opcional): ")
+        #especie = input("Espécie a pesquisar: ")
+        #preferencia = input("Preferência (opcional): ")
         
-        animais_encontrados = prefeitura.pesquisar_animal(especie, preferencia)
-        if animais_encontrados:
-            print("Animais disponíveis:")
-            for animal in animais_encontrados:
-                print(f"Tipo: {animal.tipo}")
-                print(f"Idade: {animal.idade}")
-                print(f"Cor: {animal.cor}")
-                print(f"Porte: {animal.porte}")
-                print(f"Particularidade: {animal.particularidade}")
-                print("----------")
-        else:
-            print("Nenhum animal encontrado.")
+        prefeitura.pesquisar_animal()
+        #if animais_encontrados:
+         #   print("Animais disponíveis:")
+          #  for animal in animais_encontrados:
+           #     print(f"Tipo: {animal.tipo}")
+            #    print(f"Idade: {animal.idade}")
+             #   print(f"Cor: {animal.cor}")
+              #  print(f"Porte: {animal.porte}")
+               # print(f"Particularidade: {animal.particularidade}")
+                #print("----------")
+        #else:
+         #   print("Nenhum animal encontrado.")
     
     elif escolha == "4":
         pessoa = input("Digite o nome da pessoa: ")

@@ -39,7 +39,7 @@ class Prefeitura:
         return animais_encontrados
     
     #MÉTODO PARA PESQUISAR ANIMAIS POR TIPO/IDADE/COR/PORTE/PARTICULARIDADE  
-    def pesquisar_animal():
+    def pesquisar_animal(self):
         print('='*35)
         print("Menu Pesquisa Animal:")
         print("\n1. Pesquisar animal pelo tipo")
@@ -118,7 +118,7 @@ class Prefeitura:
                     print("----------")
          
         else:
-            print('Nenhum animal encontrado com essa característica')
+            print('Nenhum animal foi encontrado com as características dessa pessoa.')
     
     
     #MÉTODO PARA PESQUISAR PESSOAS
@@ -131,16 +131,29 @@ class Prefeitura:
 
     #MÉTODO PARA GERAR RELATÓRIO
     def gerar_relatorio(self):
+        print()
+        print('='*42)
+        print("="*15,'RELATÓRIO','='*15)
+        print('='*42)
+        contador = 1
         for pessoa in self.pessoas_interessadas:
             animais_disponiveis = self.pesquisar_animal_relatorio(pessoa.especie_interesse, pessoa.preferencia)
+            print('='*21)
+            print(f'Retorno {contador}')
             print(f"Nome: {pessoa.nome}")
             print(f"Contato: {pessoa.contato}")
-            print("Animais disponíveis:")
-            for animal in animais_disponiveis:
-                print(f"Tipo: {animal.tipo}")
-                print(f"Idade: {animal.idade}")
-                print(f"Cor: {animal.cor}")
-                print(f"Porte: {animal.porte}")
-                print(f"Particularidade: {animal.particularidade}")
-                print("----------")
+            print('='*21)
+            print(f"Animais disponíveis para >> {pessoa.nome} << :")
+            contador += 1
+            if len(animais_disponiveis) == 0:
+                print('Nenhum animal encontrado com essas cracterísticas.')
+            else:
+                for animal in animais_disponiveis:
+                    print(f"Tipo: {animal.tipo}")
+                    print(f"Idade: {animal.idade}")
+                    print(f"Cor: {animal.cor}")
+                    print(f"Porte: {animal.porte}")
+                    print(f"Particularidade: {animal.particularidade}")
+                    print("----------")
+        print('='*42)
 
