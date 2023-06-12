@@ -2,30 +2,36 @@ from classe import *
 
 
 def exibir_menu():
-    print("Menu:")
+    print('='*42)
+    print("="*10,'SISTEMA DE REGISTROS','='*10)
+    print('='*42)
+    print("\nMenu:\n")
     print("1. Cadastrar animal")
     print("2. Cadastrar pessoa interessada")
     print("3. Pesquisar animais disponíveis")
     print("4. Pesquisar pessoas")
     print("5. Gerar relatório")
-    print("6. Sair")
+    print("6. Sair\n")
+    print('='*42)
 
 # Instanciar a classe Prefeitura
 prefeitura = Prefeitura()
 
 while True:
     exibir_menu()
-    escolha = input("Escolha uma opção: ")
+    escolha = input("\nEscolha uma opção: ")
 
 
     if escolha == "1":
-        tipo = input("Tipo do animal: ")
-        idade = input("Idade do animal: ")
-        cor = input("Cor do animal: ")
-        porte = input("Porte do animal: ")
-        particularidade = input("Particularidade do animal: ")
+        tipo = input('\nTipo do animal: ')
+        idade = input("\nIdade do animal: ")
+        cor = input("\nCor do animal: ")
+        porte = input("\nPorte do animal: ")
+        particularidade = input("\nParticularidade do animal: ")
         prefeitura.cadastrar_animal(tipo, idade, cor, porte, particularidade)
+        print('='*20)
         print("Animal cadastrado com sucesso!")
+        print('='*20)
 
     elif escolha == "2":
         nome = input("Nome da pessoa interessada: ")
@@ -38,6 +44,7 @@ while True:
     elif escolha == "3":
         especie = input("Espécie a pesquisar: ")
         preferencia = input("Preferência (opcional): ")
+        
         animais_encontrados = prefeitura.pesquisar_animal(especie, preferencia)
         if animais_encontrados:
             print("Animais disponíveis:")
