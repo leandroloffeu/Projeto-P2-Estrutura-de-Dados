@@ -68,6 +68,7 @@ O método pesquisar_animal recebe como parâmetros a espécie do animal e uma po
 
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/metodo%20gerar%20relatorio.png)
+
 O método gerar_relatorio percorre a lista de pessoas interessadas e, para cada pessoa, chama o método pesquisar_animal para obter uma lista de animais disponíveis que correspondem à espécie de interesse e à preferência da pessoa. Em seguida, ele imprime as informações da pessoa (nome e contato) e, em seguida, itera sobre a lista de animais disponíveis para imprimir suas informações (tipo, idade, cor, porte e particularidade). Cada animal é separado por uma linha de traços para facilitar a leitura do relatório.
 
 
