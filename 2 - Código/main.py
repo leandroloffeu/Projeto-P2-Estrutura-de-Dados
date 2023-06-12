@@ -6,7 +6,7 @@ def exibir_menu():
     print("1. Cadastrar animal")
     print("2. Cadastrar pessoa interessada")
     print("3. Pesquisar animais disponíveis")
-    print("4. Pesquisar pessaos")
+    print("4. Pesquisar pessoas")
     print("5. Gerar relatório")
     print("6. Sair")
 

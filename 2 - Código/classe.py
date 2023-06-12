@@ -90,7 +90,7 @@ class Prefeitura:
                     print(f"Particularidade: {a.particularidade}")
                     print("----------")
                     
-         elif opcao == '4':
+        elif opcao == '4':
             porte_animal = input('Digite o tipo de animal: ')
             print("Animais encontrados:")
             for a in self.animais:
