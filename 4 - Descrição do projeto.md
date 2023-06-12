@@ -33,43 +33,43 @@ Organização do Readme do projeto contendo Título do projeto, enunciado, parti
 
 
 
-A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
+A estrutura do código é composta por três classes: __Animal, Pessoa e Prefeitura.
 
 
 
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/Classe%20Animal.png)
 
-A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
+__A classe Animal__ define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/classe%20pessoa.png)
 
-A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
+__A classe Pessoa__ representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
 
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/Classe%20prefeitura.png)
 
-A classe Prefeitura é a principal do sistema e possui os métodos para cadastrar animais e pessoas interessadas, pesquisar animais disponíveis e gerar um relatório com as informações dos animais disponíveis para adoção para cada pessoa interessada.
+__A classe Prefeitura__ é a principal do sistema e possui os métodos para cadastrar animais e pessoas interessadas, pesquisar animais disponíveis e gerar um relatório com as informações dos animais disponíveis para adoção para cada pessoa interessada.
 No construtor da classe Prefeitura, __init__, são criadas duas listas vazias, animais e pessoas_interessadas, que serão utilizadas para armazenar os objetos criados durante o cadastro.
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/Metodo%20para%20cadastrar%20animal.png)
 
-O método cadastrar_animal recebe como parâmetros as características de um animal e cria um objeto Animal com essas informações. Esse objeto é adicionado à lista animais da Prefeitura.
+__O método cadastrar_animal__ recebe como parâmetros as características de um animal e cria um objeto Animal com essas informações. Esse objeto é adicionado à lista animais da Prefeitura.
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/Medoto%20cadastrar%20pessoa%20interessada.png)
 
-O método cadastrar_pessoa_interessada funciona de maneira semelhante ao cadastrar_animal, recebendo informações sobre a pessoa interessada e criando um objeto Pessoa com esses dados. O objeto é adicionado à lista pessoas_interessadas da Prefeitura.
+__O método cadastrar_pessoa_interessada__ funciona de maneira semelhante ao cadastrar_animal, recebendo informações sobre a pessoa interessada e criando um objeto Pessoa com esses dados. O objeto é adicionado à lista pessoas_interessadas da Prefeitura.
 
 
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/metodo%20pesquisar%20animal.png)
 
-O método pesquisar_animal recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
+__O método pesquisar_animal__ recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
 
 
 ![N|solid](https://github.com/leandroloffeu/Projeto-P2-Estrutura-de-Dados/blob/main-5/Imagens/metodo%20gerar%20relatorio.png)
 
-O método gerar_relatorio percorre a lista de pessoas interessadas e, para cada pessoa, chama o método pesquisar_animal para obter uma lista de animais disponíveis que correspondem à espécie de interesse e à preferência da pessoa. Em seguida, ele imprime as informações da pessoa (nome e contato) e, em seguida, itera sobre a lista de animais disponíveis para imprimir suas informações (tipo, idade, cor, porte e particularidade). Cada animal é separado por uma linha de traços para facilitar a leitura do relatório.
+__O método gerar_relatorio__ percorre a lista de pessoas interessadas e, para cada pessoa, chama o método pesquisar_animal para obter uma lista de animais disponíveis que correspondem à espécie de interesse e à preferência da pessoa. Em seguida, ele imprime as informações da pessoa (nome e contato) e, em seguida, itera sobre a lista de animais disponíveis para imprimir suas informações (tipo, idade, cor, porte e particularidade). Cada animal é separado por uma linha de traços para facilitar a leitura do relatório.
 
 
 
